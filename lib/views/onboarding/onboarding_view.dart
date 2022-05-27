@@ -21,23 +21,20 @@ class OnboardingScreenView extends StatelessWidget {
           // Note: this one prevent back button
           onWillPop: () async => false,
           child: SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20),
-              child: PageView.builder(
-                physics: const BouncingScrollPhysics(),
-                controller: controller.pageControll,
-                onPageChanged: controller.selectedPagexNumber,
-                itemCount: listonboarding.length,
-                itemBuilder: (itemBuilder, index) => OnboardingWidgetHoler(
-                  showGetStarted:
-                      index == listonboarding.indexOf(listonboarding.last)
-                          ? true
-                          : false,
-                  headTitle: listonboarding[index].headtitle,
-                  description: listonboarding[index].description,
-                  pngImage: listonboarding[index].imageattach,
-                  skipOrgetStarted: () => controller.gotoSigin(),
-                ),
+            child: PageView.builder(
+              physics: const BouncingScrollPhysics(),
+              controller: controller.pageControll,
+              onPageChanged: controller.selectedPagexNumber,
+              itemCount: listonboarding.length,
+              itemBuilder: (itemBuilder, index) => OnboardingWidgetHoler(
+                showGetStarted:
+                    index == listonboarding.indexOf(listonboarding.last)
+                        ? true
+                        : false,
+                headTitle: listonboarding[index].headtitle,
+                description: listonboarding[index].description,
+                pngImage: listonboarding[index].imageattach,
+                skipOrgetStarted: () => controller.gotoSigin(),
               ),
             ),
           ),
