@@ -9,3 +9,4 @@ const Color slightlyWhite = Color(0xFFF8F8F8);
 const Color opacityGray = Color(0x4DE5E5E5);
 const Color forText = Color(0xFF465B65);
 const Color forText1 = Color(0xFF263238);
+const Color grayrats = Color(0xFFCBCFD1);

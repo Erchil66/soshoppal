@@ -14,6 +14,15 @@ class AssetInternal {
 
 // # SVG
   static const String myLogoSvg = "${pathSvg}cart_logo-02.svg";
+  static const String myLogoSvgfont = "${pathSvg}Group189.svg";
   static const String signinBg = "${pathSvg}space.svg";
   static const String signupMascot = "${pathSvg}undraw_appreciation.svg";
+  static const String emailIcon = "${pathSvg}at.svg";
+  static const String passwordIcon = "${pathSvg}password.svg";
+  static const String iconRightIcon = "${pathSvg}arrow-right.svg";
+  static const String gmailIcon = "${pathSvg}icons8-gmail.svg";
+  static const String facebookIcon = "${pathSvg}facebook.svg";
+  static const String mobileIcon = "${pathSvg}mobile.svg";
+  static const String username = "${pathSvg}id-badge.svg";
+  static const String signUpbg = "${pathSvg}undraw_appreciation.svg";
 }

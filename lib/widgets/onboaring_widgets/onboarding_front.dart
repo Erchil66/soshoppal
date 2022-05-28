@@ -4,19 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:soshoppal/constants/colors.dart';
 
 class OnboardingWidgetHoler extends StatelessWidget {
-  final bool? showGetStarted;
-  final Function()? skipOrgetStarted;
   final String? headTitle;
   final String? description;
   final String? pngImage;
 
   const OnboardingWidgetHoler(
-      {super.key,
-      this.showGetStarted,
-      this.skipOrgetStarted,
-      this.headTitle,
-      this.description,
-      this.pngImage});
+      {super.key, this.headTitle, this.description, this.pngImage});
 
   @override
   Widget build(BuildContext context) {
@@ -24,64 +17,9 @@ class OnboardingWidgetHoler extends StatelessWidget {
       height: MediaQuery.of(context).size.height,
       child: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            // SizedBox(
-            //   height: 1.5.h,
-            // ),
-            Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20),
-              child: SizedBox(
-                width: 375,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: [
-                    showGetStarted == true
-                        ? SizedBox(
-                            child: ElevatedButton(
-                              onPressed: skipOrgetStarted,
-                              style: ElevatedButton.styleFrom(
-                                elevation: 0,
-                                primary: orangeColor,
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(90)),
-                              ),
-                              child: Center(
-                                child: Padding(
-                                  padding: const EdgeInsets.all(3.0),
-                                  child: Text(
-                                    "Get Started",
-                                    style: GoogleFonts.robotoFlex(
-                                      color: whiteColor,
-                                      fontWeight: FontWeight.w400,
-                                      fontSize: 15.sp,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                          )
-                        : SizedBox(
-                            child: GestureDetector(
-                              onTap: skipOrgetStarted,
-                              behavior: HitTestBehavior.deferToChild,
-                              child: Padding(
-                                padding: const EdgeInsets.only(top: 8.0),
-                                child: Text(
-                                  "SKIP",
-                                  style: GoogleFonts.robotoFlex(
-                                    color: forText,
-                                    fontWeight: FontWeight.w400,
-                                    fontSize: 14.sp,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                  ],
-                ),
-              ),
-            ),
             SizedBox(
               height: 3.5.h,
             ),

@@ -24,7 +24,6 @@ class RouteLists {
     // # Note : sometime calling const is required to avoind blue lines
     // # Splash
     GetPage(
-      curve: Curves.easeIn,
       transition: Transition.fade,
       transitionDuration: 300.milliseconds,
       name: splash,
@@ -32,7 +31,6 @@ class RouteLists {
     ),
     // # Onboarding
     GetPage(
-      curve: Curves.easeIn,
       transition: Transition.fade,
       transitionDuration: 300.milliseconds,
       name: onboarding,
@@ -40,7 +38,6 @@ class RouteLists {
     ),
     // # Sign In Screen
     GetPage(
-      curve: Curves.easeIn,
       transition: Transition.fade,
       transitionDuration: 300.milliseconds,
       name: signIn,
@@ -48,7 +45,6 @@ class RouteLists {
     ),
     // # Sign Up Screen
     GetPage(
-      curve: Curves.easeIn,
       transition: Transition.fade,
       transitionDuration: 300.milliseconds,
       name: signUp,
@@ -56,7 +52,6 @@ class RouteLists {
     ),
     // # Main Screen
     GetPage(
-      curve: Curves.easeIn,
       transition: Transition.fade,
       transitionDuration: 300.milliseconds,
       name: mainpage,
